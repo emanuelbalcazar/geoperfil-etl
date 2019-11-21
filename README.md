@@ -7,7 +7,9 @@ Extracción, procesamiento de artículos y guardado de entidades
 
 2. Activar el virtualenv: source ./bin/activate
 
-3. Instalar las dependencias: pip install -r requirements.txt
+3. Actualizar pip: pip install --upgrade pip wheel
+
+4. Instalar las dependencias: pip install -r requirements.txt
 
 ## Despliegue
 
