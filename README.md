@@ -3,7 +3,7 @@ Extracción, procesamiento de artículos y guardado de entidades
 
 ## Preparación
 
-1. Agregar el virtualenv dentro de la carpeta del proyecto: python3 -m venv .
+1. Agregar el virtualenv dentro de la carpeta del proyecto: python3 -m venv .venv/
 
 2. Activar el virtualenv: source ./bin/activate
 
