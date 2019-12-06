@@ -8,6 +8,7 @@ def start():
 
     for article in articles:
         if is_useful(article):
+            print(article[0])
             articles_useful.append(article)
 
     return articles_useful
