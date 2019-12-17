@@ -40,7 +40,7 @@ def texto_to_html(text, nlp):
     # nlp = spacy.load('es_core_news_md')
     doc = nlp(text)
 
-    colors = {"PER": "linear-gradient(90deg,#FFFF00,#00FFFF)"}
+    colors = {"PER": "color(#FFFF00)"}
     options = {"colors": colors, "ents": ["PER"]}
     html = displacy.render(doc, style="ent", minify=True, options=options)
     return html
@@ -62,14 +62,13 @@ def search_pattern(text):
         return True
 
 
-def test():
-    articles = get_articles()
-    nlp = spacy.load('es_core_news_md')
+# def test():
+#     articles = get_articles()
+#     nlp = spacy.load('es_core_news_md')
+#
+#     for article in articles:
+#         print(article[0])
+#         update_html_article(str(article[0]), texto_to_html(article[2], nlp))
 
-    for article in articles:
-        print(article[0])
-        update_html_article(str(article[0]), texto_to_html(article[2], nlp))
 
 
-if __name__ == '__main__':
-    test()
